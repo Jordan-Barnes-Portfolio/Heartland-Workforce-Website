@@ -83,8 +83,8 @@
 /* Staggered animation for lists */
 .stagger-item {
   opacity: 0;
-  transform: translateY(10px);
-  animation: staggerFade 0.5s ease forwards;
+  transform: translateY(20px);
+  animation: staggerFade 0.6s ease forwards;
 }
 
 @keyframes staggerFade {
@@ -101,3 +101,102 @@
 .stagger-item:nth-child(4) { animation-delay: 0.4s; }
 .stagger-item:nth-child(5) { animation-delay: 0.5s; }
 .stagger-item:nth-child(6) { animation-delay: 0.6s; }
+.stagger-item:nth-child(7) { animation-delay: 0.7s; }
+.stagger-item:nth-child(8) { animation-delay: 0.8s; }
+
+/* Media hover effects */
+.media-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.media-container img {
+  transition: transform 0.3s ease;
+}
+
+.media-container:hover img {
+  transform: scale(1.02);
+}
+
+/* Enhanced hover and interaction effects */
+.feature-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Simplified floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Remove complex animations */
+.animate-float-reverse {
+  animation: float 5s ease-in-out infinite reverse;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Simplified button effects */
+.btn-enhanced {
+  transition: all 0.2s ease;
+}
+
+.btn-enhanced:hover {
+  transform: translateY(-1px);
+}
+
+/* Removed complex feature number animation */
+.feature-number {
+  position: relative;
+}
+
+/* Improved responsive design */
+@media (max-width: 1024px) {
+  .stagger-item {
+    text-align: center;
+  }
+  
+  .feature-card {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+/* Intersection Observer fallback for better performance */
+@media (prefers-reduced-motion: reduce) {
+  .stagger-item {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+  
+  .animate-bounce,
+  .animate-pulse,
+  .animate-float {
+    animation: none;
+  }
+  
+  .feature-card:hover {
+    transform: none;
+  }
+  
+  .media-container:hover img {
+    transform: none;
+  }
+}
