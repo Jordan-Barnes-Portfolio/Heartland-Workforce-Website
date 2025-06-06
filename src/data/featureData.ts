@@ -25,7 +25,13 @@ export const featureCategories: FeatureCategory[] = [
       'Add partners for shared visibility',
       'Export branded reports (PDF, email, link)'
     ],
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+    // If the image is in the public/assets/images directory, this is correct:
+        image: '/src/assets/images/projects.png',
+    
+    // If you want to import the image as a module, use:
+    // import projectManagementImg from '../assets/images/project-management.png';
+    // and then:
+    // image: projectManagementImg,
     isVideo: false
   },
   {
@@ -38,7 +44,7 @@ export const featureCategories: FeatureCategory[] = [
       'Sales tool to show service class before starting work',
       'Track close rates, commissions, and partner networks'
     ],
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80',
+    image: '/src/assets/images/leads.png',
     isVideo: false
   },
   {
@@ -50,7 +56,7 @@ export const featureCategories: FeatureCategory[] = [
       'Timecard submission, tracking, and approval',
       'Manage access levels and contact details'
     ],
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2671&q=80',
+    image: '/src/assets/images/employees.png',
     isVideo: false
   },
   {
@@ -62,7 +68,7 @@ export const featureCategories: FeatureCategory[] = [
       'Map and calendar-based dispatch interface',
       'Drag-and-drop scheduling'
     ],
-    image: 'https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2664&q=80',
+    image: '/src/assets/images/dispatch.png',
     isVideo: false
   },
   {
@@ -74,7 +80,7 @@ export const featureCategories: FeatureCategory[] = [
       'Aggregate leads from social and ad platforms',
       'Single unified interface for lead gen'
     ],
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80',
+    image: '/src/assets/images/inbox.png',
     isVideo: false
   },
   {
@@ -86,7 +92,7 @@ export const featureCategories: FeatureCategory[] = [
       'Store SOPs, job types, SOCs',
       'Query via AI Assistant in the field for consistency'
     ],
-    image: 'https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2532&q=80',
+    image: '/src/assets/images/docs.png',
     isVideo: false
   },
   {
@@ -99,7 +105,7 @@ export const featureCategories: FeatureCategory[] = [
       'Build price groups for repetitive jobs',
       'Sync with QuickBooks'
     ],
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2026&q=80',
+    image: '/src/assets/images/invoice.png',
     isVideo: false
   }
 ];
