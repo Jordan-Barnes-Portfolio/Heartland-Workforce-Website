@@ -134,9 +134,6 @@ const FeatureShowcase: React.FC = () => {
                     
                     {/* Simplified caption */}
                     <div className="text-center mt-6">
-                      <p className="text-gray-500 text-sm italic">
-                        *Interface preview - Actual software screenshots coming soon
-                      </p>
                       <div className="flex items-center justify-center mt-2 space-x-1">
                         <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                         <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
