@@ -2,6 +2,15 @@ import {
   ClipboardList, Users, MapPin, Inbox, FileText, DollarSign, BarChart3
 } from 'lucide-react';
 
+// Import images as modules
+import projectsImg from '../assets/images/projects.png';
+import leadsImg from '../assets/images/leads.png';
+import employeesImg from '../assets/images/employees.png';
+import dispatchImg from '../assets/images/dispatch.png';
+import inboxImg from '../assets/images/inbox.png';
+import docsImg from '../assets/images/docs.png';
+import invoiceImg from '../assets/images/invoice.png';
+
 export interface FeatureCategory {
   id: string;
   title: string;
@@ -25,13 +34,7 @@ export const featureCategories: FeatureCategory[] = [
       'Add partners for shared visibility',
       'Export branded reports (PDF, email, link)'
     ],
-    // If the image is in the public/assets/images directory, this is correct:
-        image: '/src/assets/images/projects.png',
-    
-    // If you want to import the image as a module, use:
-    // import projectManagementImg from '../assets/images/project-management.png';
-    // and then:
-    // image: projectManagementImg,
+    image: projectsImg,
     isVideo: false
   },
   {
@@ -44,7 +47,7 @@ export const featureCategories: FeatureCategory[] = [
       'Sales tool to show service class before starting work',
       'Track close rates, commissions, and partner networks'
     ],
-    image: '/src/assets/images/leads.png',
+    image: leadsImg,
     isVideo: false
   },
   {
@@ -56,7 +59,7 @@ export const featureCategories: FeatureCategory[] = [
       'Timecard submission, tracking, and approval',
       'Manage access levels and contact details'
     ],
-    image: '/src/assets/images/employees.png',
+    image: employeesImg,
     isVideo: false
   },
   {
@@ -68,7 +71,7 @@ export const featureCategories: FeatureCategory[] = [
       'Map and calendar-based dispatch interface',
       'Drag-and-drop scheduling'
     ],
-    image: '/src/assets/images/dispatch.png',
+    image: dispatchImg,
     isVideo: false
   },
   {
@@ -80,7 +83,7 @@ export const featureCategories: FeatureCategory[] = [
       'Aggregate leads from social and ad platforms',
       'Single unified interface for lead gen'
     ],
-    image: '/src/assets/images/inbox.png',
+    image: inboxImg,
     isVideo: false
   },
   {
@@ -92,7 +95,7 @@ export const featureCategories: FeatureCategory[] = [
       'Store SOPs, job types, SOCs',
       'Query via AI Assistant in the field for consistency'
     ],
-    image: '/src/assets/images/docs.png',
+    image: docsImg,
     isVideo: false
   },
   {
@@ -105,7 +108,7 @@ export const featureCategories: FeatureCategory[] = [
       'Build price groups for repetitive jobs',
       'Sync with QuickBooks'
     ],
-    image: '/src/assets/images/invoice.png',
+    image: invoiceImg,
     isVideo: false
   }
 ];
